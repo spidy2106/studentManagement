@@ -36,7 +36,7 @@ public class StudentController {
     //@RequestMapping(value = "/saveStudent", method = RequestMethod.POST)
     @PostMapping("/saveStudent")
     public Student addStudent(@RequestBody Student student) {
-        System.out.println("clicked here");
+        System.out.println("inside addStudent");
         return studentService.addStudent(student);
     }
 
